@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+   }
+   ::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #ffa1d8 14%,#fe3434 64%);
+    border-radius: 0 5px 0 0;
+   }
+   ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #FFA1D8 14%,#fe3434 64%);
+   }
+   ::-webkit-scrollbar-track{
+    background: #ffffff;
+    border-radius: 0 5px 0 0;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+   }
+
+body{
+    background: black;
+    color: transparent;
+    text-shadow: 1px 1px 1px #ffebf7, 1px 1px 2px #ffa1d8, 1px 1px 2px #fe3434;
+}
+div{
+    width: 90%;
+    height: 650px;
+    margin: 3% auto;
+    background: #990f0f;
+    border: 5px solid #fe3434;
+    border-radius: 10px;
+    /* border: 5px solid black; */
+    font-size: 1.5em;
+    overflow: auto;
+}
+.recorte{
+    /* border: 2px solid red; */
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 11px;
+    width: 90px;
+    height: 85px;
+    border: none !important;
+    margin: 0;
+    overflow: hidden;
+    float: left;
+    transition: all .5s;
+}
+p{
+    text-align: justify;
+    position: relative;
+    z-index: 1;
+}
+iframe{
+    float: right;
+    margin: 15px;
+    border: 5px solid #fe3434;
+    border-radius: 10px;
+}
+iframe::selection{
+    color: rgb(247, 247, 247);
+    border: 5px solid #fe3434;
+    background: #fe3434;
+}
+div img{
+    position: absolute;
+    z-index: 5;
+    top: -37px;
+    left: -31px;
+    width: 173%;
+    vertical-align: middle;
+    
+}
+.recorte:hover{
+    cursor: pointer;
+    width: 100px;
+    height: 118px;
+}
+p::selection{
+    color: rgb(247, 247, 247);
+    background:#cc0e0e;
+}
+a{
+    text-decoration: none;
+    color: #cc0e0e;
+}
+a:link{
+    color: transparent ;
+}
+p::first-line{
+    text-align: left;
+    font-size: 3em;
+    font-weight: 600;
+    color: transparent;
+    text-shadow: 1px 1px 1px #ffebf7, 4px 4px 2px #ffa1d8, -1px -3px 2px #fe3434,-1px 5px 2px #fe3434, 0px 0px 25px #fe3434, 0px 0px 25px #fe3434, 0px 0px 25px #fe3434;
+}
